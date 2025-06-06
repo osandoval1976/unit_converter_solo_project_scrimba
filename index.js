@@ -15,10 +15,10 @@ let convert = document.getElementById("text2")
 let sText = document.getElementById("supporting-text") //innerHtml//
 let sText1 = document.getElementById("supporting-text2") //innerHtml//
 let sText2 = document.getElementById("supporting-text1") //innerHtml//
-
+let nconvert = ""
 //Convert button function//
 convert.addEventListener("click", function() {
-  let nconvert = document.getElementById("ntn").value//input value//
+   nconvert = document.getElementById("ntn").value//input value//
   let lenghtFeet = nconvert / feet //convert to meters
   let lenghtMeter = nconvert * feet // convert to feets
   let volLiters = nconvert * liter // convert to liters
