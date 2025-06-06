@@ -15,17 +15,41 @@ let convert = document.getElementById("text2")
 let sText = document.getElementById("supporting-text") //innerHtml//
 let sText1 = document.getElementById("supporting-text2") //innerHtml//
 let sText2 = document.getElementById("supporting-text1") //innerHtml//
-let nconvert = ""
-//Convert button function//
-convert.addEventListener("click", function() {
-   nconvert = document.getElementById("ntn").value//input value//
+ 
+  let nconvert = document.getElementById("ntn").value//input value//
   let lenghtFeet = nconvert / feet //convert to meters
   let lenghtMeter = nconvert * feet // convert to feets
   let volLiters = nconvert * liter // convert to liters
   let volGallons = nconvert / liter// convert to gallons
   let masskilograms = nconvert * kilogram//convert to Kilograms
   let massPounds = nconvert / kilogram// convert to pounds
+  
+
+//Convert button function//
+convert.addEventListener("click", function() {
+  
   sText.innerHTML =`${nconvert} meters = ${lenghtFeet.toFixed(3)} feets | ${nconvert} feets = ${lenghtMeter.toFixed(3)} meters `
   sText1.innerHTML =`${nconvert} liters = ${volLiters.toFixed(3)} gallons | ${nconvert} gallons = ${volGallons.toFixed(3)} liters `
   sText2.innerHTML =`${nconvert} kilos = ${masskilograms.toFixed(3)} pounds | ${nconvert} pounds = ${massPounds.toFixed(3)} kilos`
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
